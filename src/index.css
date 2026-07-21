@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand: #052e21; /* Ultra-deep forest green */
+  --color-brand-hover: #0a4634;
+  --color-accent: #10b981; /* High-contrast energetic emerald green */
+  --color-accent-hover: #34d399; /* Bright mint green */
+  --color-charcoal: #0c120f; /* Deep obsidian green-gray text */
+  --color-neutral-bg: #f5f9f7; /* Soft pristine off-white with mint undertone */
+}
+
+/* Base resets & custom animations */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-neutral-bg);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-brand);
+}
+
+/* Custom editorial styles */
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  color: transparent;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom keyframe animations referenced across the app */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    /* `none` (not translateY(0)) so the settled element creates no stacking
+       context — otherwise page wrappers would trap fixed modals below the header. */
+    transform: none;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1.05);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.1);
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Tochukwu Nwankwo Foundation",
+  "description": "A modern, professional, editorial-style nonprofit website for the Tochukwu Nwankwo Foundation (TNF) supporting youth soccer talent development, education, and healthcare in Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
