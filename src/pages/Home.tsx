@@ -318,6 +318,57 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
+      {/* 6b. COMMUNITY OUTREACH — WIDOW RELIEF */}
+      <section id="widow-outreach" className="py-24 bg-brand text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* Image */}
+            <div className="lg:col-span-6 relative">
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
+                <img
+                  src="/images/widow.jpg"
+                  alt="Simy Nwankwo beside bags of rice and foodstuffs donated to widows"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 bg-accent text-brand p-5 rounded-2xl shadow-xl hidden sm:block max-w-[230px]">
+                <span className="block font-display font-black text-3xl leading-none">Widows Fed</span>
+                <span className="block font-sans text-[11px] font-bold uppercase tracking-widest mt-2">
+                  Rice, foodstuffs &amp; essential relief
+                </span>
+              </div>
+            </div>
+
+            {/* Text with emphasis */}
+            <div className="lg:col-span-6">
+              <span className="font-mono text-xs font-bold text-accent uppercase tracking-[0.2em] mb-4 block">
+                COMMUNITY OUTREACH
+              </span>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight text-white mb-6">
+                Compassion Beyond the Pitch
+              </h2>
+              <p className="font-sans text-base sm:text-lg text-gray-200 leading-relaxed mb-6 font-light">
+                Our mission has never stopped at the touchline. In a deeply personal outreach,{' '}
+                <strong className="text-white font-semibold">the foundation stood with widows across the community</strong>{' '}
+                &mdash; women who carry their families alone.
+              </p>
+              <p className="font-sans text-base text-gray-300 leading-relaxed mb-8 font-light">
+                We personally distributed{' '}
+                <strong className="text-accent font-bold">bags of rice, foodstuffs, and essential relief materials</strong>,
+                bringing warmth, dignity, and real relief to the homes that needed it most.
+              </p>
+
+              <blockquote className="border-l-4 border-accent pl-5 py-1">
+                <p className="font-display font-semibold text-lg sm:text-xl text-white italic leading-relaxed">
+                  &ldquo;When you lift a widow, you lift an entire family &mdash; and a whole generation rises with her.&rdquo;
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 7. UPCOMING EVENTS GRID */}
       <section id="upcoming-events" className="py-24 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
