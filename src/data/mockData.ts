@@ -224,6 +224,49 @@ export const storiesData: NewsStory[] = [
 ];
 
 export const galleryData: GalleryItem[] = [
+  // TNF Under-18 Tournament, 1st Edition: Christ the King College, Onitsha, 7 Oct 2026
+  {
+    id: 'u18-lift',
+    title: 'U18 1st Edition: The Trophy Lift',
+    category: 'Tournaments',
+    image: '/images/u18/the-lift.jpg',
+    description: 'The green side receive the cup and gold medals as the first ever TNF Under-18 champions.'
+  },
+  {
+    id: 'u18-green-side',
+    title: 'U18 1st Edition: Green Side',
+    category: 'Tournaments',
+    image: '/images/u18/green-side.jpg',
+    description: 'The eventual champions lined up with their coaches at Christ the King College, Onitsha.'
+  },
+  {
+    id: 'u18-blue-side',
+    title: 'U18 1st Edition: Blue Side',
+    category: 'Tournaments',
+    image: '/images/u18/blue-side.jpg',
+    description: 'Lined up before kick-off in shirts printed specially for the 1st edition.'
+  },
+  {
+    id: 'u18-prize-table',
+    title: 'U18 1st Edition: On the Table',
+    category: 'Tournaments',
+    image: '/images/u18/prize-table.jpg',
+    description: 'The trophy, medals and the ₦500,000 prize cheque from Access Bank.'
+  },
+  {
+    id: 'u18-officials',
+    title: 'U18 1st Edition: Match Officials',
+    category: 'Tournaments',
+    image: '/images/u18/officials.jpg',
+    description: 'Referees, assistants and organisers in front of the Christ the King College stand.'
+  },
+  {
+    id: 'u18-high-table',
+    title: 'U18 1st Edition: The High Table',
+    category: 'Tournaments',
+    image: '/images/u18/high-table.jpg',
+    description: 'Guests and organisers watching from the stand on matchday, 7 October 2026.'
+  },
   {
     id: 'gal-1',
     title: 'U18 Championship Finalists',
