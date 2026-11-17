@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Trophy, BookOpen, Heart, Users, Award, Dribbble, ShieldCheck, ChevronRight } from 'lucide-react';
 import { statsData, programsData, eventsData, testimonialsData } from '../data/mockData';
 import { initialsAvatar } from '../utils/avatar';
+import U18Recap from '../components/U18Recap';
 
 interface HomeProps {
   onNavigate: (pageId: string) => void;
@@ -317,6 +318,9 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
         </div>
       </section>
+
+      {/* 6a. U18 TOURNAMENT — 1ST EDITION RECAP (Oct 2026) */}
+      <U18Recap onNavigate={onNavigate} />
 
       {/* 6b. COMMUNITY OUTREACH — WIDOW RELIEF */}
       <section id="widow-outreach" className="py-24 bg-brand text-white relative overflow-hidden">
